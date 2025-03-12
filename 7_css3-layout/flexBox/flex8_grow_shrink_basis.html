@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="basic.css">
+    <style>
+        .container {
+            border: 5px solid #ffcc5c;
+            display: flex;
+        }
+
+         /* 
+        flex ( flex-grow | flex-shrink | flex-basis)
+        flex: 0 1 auto ; (default)
+        
+        */
+
+        .home{
+            flex: 1;
+        }
+        .logout{
+            flex: 0 1 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container">
+        <div class="home">Home</div>
+        <div class="logout">Logout</div>
+    </nav>
+</body>
+</html>

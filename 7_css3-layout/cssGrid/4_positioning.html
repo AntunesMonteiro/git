@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="basic.css">
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 3px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 80px 200px 80px;
+        }
+
+        .header {
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+           /*  grid-column: 1 / -1; */
+            grid-column: 3 / -1;
+        }
+
+        .menu {
+            grid-column: 1 / span 2;
+            grid-row: 1 / -1;
+        }
+
+        .content {
+            grid-column: span 10;
+        }
+
+        .footer {
+            grid-column: 3 / -1;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="menu">MENU</div>
+        <div class="content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, totam? Ab a nemo, officiis quibusdam qui dolorem quasi. Temporibus minima perferendis voluptas rem ducimus esse autem maiores pariatur eos eaque!</p>
+        </div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+</html>
